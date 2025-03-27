@@ -1,0 +1,21 @@
+/* App.css */
+.app-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px;
+}
+
+.news-form {
+  width: 100%;
+  max-width: 500px;
+  margin-bottom: 24px;
+}
+
+.news-card {
+  width: 100%;
+  max-width: 500px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
