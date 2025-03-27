@@ -22,7 +22,7 @@ interface NewsItem {
   content: string;
 }
 
-const App: React.FC = () => {
+const App = () => {
   const [news, setNews] = useState<NewsItem[]>([]);
   const [title, setTitle] = useState('');
   const [content, setContent] = useState('');
@@ -100,7 +100,10 @@ useEffect(() => {
   {news.map((item) => (
     <Card key={item.id}>
       <CardContent>
-        <Typography variant="h6">{item.title}</Typography>
+        <Typography sx={{
+    whiteSpace: 'pre-wrap',
+    wordBreak: 'break-word', 
+  }} variant="h6">{item.title}</Typography>
         <Typography
   variant="body2"
   sx={{
